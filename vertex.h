@@ -3,6 +3,8 @@
 
 #include <vector>
 
+using namespace std;
+
 class Vertex{
   vector<char> edges;
   char label;
@@ -13,6 +15,10 @@ class Vertex{
   void addEdge(char);   
   char getLabel();
   const vector<char> getEdges();
-}
+  bool operator==(const char &other) const {
+      return other == label;
+  }
+  bool containsEdge(char);
+};
 
 #endif
