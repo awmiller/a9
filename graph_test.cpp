@@ -13,6 +13,7 @@ GraphTest::GraphTest() {
   graph->addEdge( 'W', 'Y' );
   graph->addEdge( 'Y', 'R' );
   graph->addEdge( 'R', 'Z' );
+  graph->addEdge( 'P', 'T' );
 }
 
 GraphTest::~GraphTest() {
